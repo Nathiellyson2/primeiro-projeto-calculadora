@@ -1,0 +1,15 @@
+C:\Users\Nathiellyson\Documents\estudo_c#\obj\Debug\net8.0\estudo_c#.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nathiellyson\Documents\estudo_c#\obj\Debug\net8.0\estudo_c#.AssemblyInfoInputs.cache
+C:\Users\Nathiellyson\Documents\estudo_c#\obj\Debug\net8.0\estudo_c#.AssemblyInfo.cs
+C:\Users\Nathiellyson\Documents\estudo_c#\obj\Debug\net8.0\estudo_c#.csproj.CoreCompileInputs.cache
+C:\Users\Nathiellyson\Documents\estudo_c#\obj\Debug\net8.0\estudo_c#.sourcelink.json
+C:\Users\Nathiellyson\Documents\estudo_c#\bin\Debug\net8.0\estudo_c#.exe
+C:\Users\Nathiellyson\Documents\estudo_c#\bin\Debug\net8.0\estudo_c#.deps.json
+C:\Users\Nathiellyson\Documents\estudo_c#\bin\Debug\net8.0\estudo_c#.runtimeconfig.json
+C:\Users\Nathiellyson\Documents\estudo_c#\bin\Debug\net8.0\estudo_c#.dll
+C:\Users\Nathiellyson\Documents\estudo_c#\bin\Debug\net8.0\estudo_c#.pdb
+C:\Users\Nathiellyson\Documents\estudo_c#\obj\Debug\net8.0\estudo_c#.dll
+C:\Users\Nathiellyson\Documents\estudo_c#\obj\Debug\net8.0\refint\estudo_c#.dll
+C:\Users\Nathiellyson\Documents\estudo_c#\obj\Debug\net8.0\estudo_c#.pdb
+C:\Users\Nathiellyson\Documents\estudo_c#\obj\Debug\net8.0\estudo_c#.genruntimeconfig.cache
+C:\Users\Nathiellyson\Documents\estudo_c#\obj\Debug\net8.0\ref\estudo_c#.dll
