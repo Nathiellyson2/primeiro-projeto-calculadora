@@ -1,0 +1,133 @@
+    
+Curso Básico de c#:
+
+Aqui tem algumas informações importantes caso esqueça de algo.
+
+    Início:
+
+    tipos: byte, bool, char, string, int, long, float, double, decimal 
+    type variableName = value;
+
+    operadores: = , +, -, /, * , ++, --
+
+    Existe o "const" (constante) não permite outra atribuição:
+    const int numero = 5;
+    numero = 6; // error
+
+    int x, y, z;
+    x = y = z = 50;
+    Console.WriteLine(x + y + z); // 150
+    
+    int x = 5, y = 6, z = 50;
+    Console.WriteLine(x + y + z); // 61
+
+    int myInt = 10;
+    double myDouble = 5.25d;
+    bool myBool = true;
+
+    Console.WriteLine(Convert.ToString(myInt));    // convert int to string
+    Console.WriteLine(Convert.ToDouble(myInt));    // convert int to double
+    Console.WriteLine(Convert.ToInt32(myDouble));  // convert double to int
+    Console.WriteLine(Convert.ToString(myBool));   // convert bool to string
+    
+    OPERADORES DE COMPARAÇÃO
+    Exemplo:
+    int x = 5;
+    int y = 3;
+    Console.WriteLine(x > y);
+
+    Lista de COMPARAÇÃO:
+
+    ==	Equal to	x == y	
+    !=	Not equal	x != y	
+    >	Greater than	x > y	
+    <	Less than	x < y	
+    >=	Greater than or equal to	x >= y	
+    <=	Less than or equal to	x <= y	
+
+    Operadores Lógicos:
+
+    && 	Lógico e	Retorna True se ambas as afirmações forem verdadeiras	x < 5 && x < 10	
+    || 	Lógico ou	Retorna True se uma das afirmações for verdadeira	x < 5 || x < 4	
+    !	Lógico não	Reverter o resultado, devolve False se o resultado for verdadeiro	!(x < 5 && x < 10)
+
+    Operadores Condocionais:
+
+    if (condition)
+    {
+        // block of code to be executed if the condition is True
+    }
+    
+    -------------------------------------------------------------
+
+    if (condition1) 
+    {      
+        // block of code to be executed if condition1 is True
+    } 
+    else if (condition2) 
+    {
+        // block of code to be executed if the condition1 is false and condition2 is True
+    }           
+    else
+    {
+        // block of code to be executed if the condition1 is false and condition2 is False
+    }
+
+    -------------------------------------------------------------
+
+    Exemplo:
+    if (20 > 18)
+    {
+        Console.WriteLine("20 is greater than 18");
+    }
+
+    Outro Exemplo:
+
+    int x = 20;
+    int y = 18;
+    if (x > y) 
+    {
+        Console.WriteLine("x is greater than y");
+    }
+
+    -------------------------------------------------------------
+
+    int time = 20;
+    if (time < 18) 
+    {
+        Console.WriteLine("Good day.");
+    } 
+    else 
+    {
+        Console.WriteLine("Good evening.");
+    }
+    // Outputs "Good evening."
+
+    -------------------------------------------------------------
+
+    int time = 22;
+    if (time < 10) 
+    {
+        Console.WriteLine("Good morning.");
+    } 
+    else if (time < 20) 
+    {
+        Console.WriteLine("Good day.");
+    } 
+    else 
+    {
+        Console.WriteLine("Good evening.");
+    }
+    // Outputs "Good evening."
+
+    -------------------------------------------------------------
+
+    Outro estilo de Condocionais Simples:
+
+    variable = (condition) ? expressionTrue :  expressionFalse;
+
+    Exemplo:
+
+    int time = 20;
+    string result = (time < 18) ? "Good day." : "Good evening.";
+    Console.WriteLine(result);
