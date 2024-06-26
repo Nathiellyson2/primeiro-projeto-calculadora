@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nathiellyson\\Documents\\estudo_c#\\estudo_c#.csproj": {}
+    "c:\\Users\\Nathiellyson\\Documents\\estudo_c#\\estudo_c#.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nathiellyson\\Documents\\estudo_c#\\estudo_c#.csproj": {
+    "c:\\Users\\Nathiellyson\\Documents\\estudo_c#\\estudo_c#.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nathiellyson\\Documents\\estudo_c#\\estudo_c#.csproj",
+        "projectUniqueName": "c:\\Users\\Nathiellyson\\Documents\\estudo_c#\\estudo_c#.csproj",
         "projectName": "estudo_c#",
-        "projectPath": "C:\\Users\\Nathiellyson\\Documents\\estudo_c#\\estudo_c#.csproj",
+        "projectPath": "c:\\Users\\Nathiellyson\\Documents\\estudo_c#\\estudo_c#.csproj",
         "packagesPath": "C:\\Users\\Nathiellyson\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nathiellyson\\Documents\\estudo_c#\\obj\\",
+        "outputPath": "c:\\Users\\Nathiellyson\\Documents\\estudo_c#\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nathiellyson\\AppData\\Roaming\\NuGet\\NuGet.Config",

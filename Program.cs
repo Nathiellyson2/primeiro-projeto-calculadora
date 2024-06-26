@@ -1,50 +1,65 @@
-﻿// See https://aka.ms/new-console-template for more information
-/*  tipos: byte, bool, char, string, int, long, float, double, decimal 
-    type variableName = value;
+﻿// Calculadora de Linha de comando em c#!
+// Primeiro vamos perguntar ao usuário se ele vai querer usar a calculadora.
+Console.WriteLine("\t\tBEM VINDO A CALCULADORA DE CMD!!");
+Console.Write("\t\tDESEJA ENTRAR NA CALCULADORAS (s (sim) ou N (não))? ");
+var entradaDoUsuario = Console.ReadLine();
+var entradaDoUsuarioMaiuscula = entradaDoUsuario.ToUpper();
 
-    operadores: = , +, -, /, * , ++, --
+// Se a respota for "S" (sim) vamos continuar.
+if (entradaDoUsuarioMaiuscula == "S") {
+    Console.Write("\t\tDIGITE UM NÚMERO PARA COMEÇAR: ");
+    double numero = Convert.ToDouble(Console.ReadLine());
+    double totalDaoperacao = numero;
 
-    Existe o "const" (constante) não permite outra atribuição:
-    const int numero = 5;
-    numero = 6; // error
+    /* fiz um laço de repetição para fazer os calculos matemáticos,
+     o usuário começa digitando o número da operação e o sistema vai fazendo os cálculos,
+     optei por utilizar o "switch" para colocar em prática o novo conhecimento adquirido,
+     quando o usuário coloca um número diferente de operação o while quebra */
+    while (numero != 0) {
+        Console.WriteLine("\t\tÓTIMO!, QUAL OPERAÇÃO VOCÊ DESEJA REALIZAR?");
+        Console.WriteLine("\t\tDIGITE: 1 (Adição) \t 2 (Subtrair) \t\t 3 (Multiplicar) \t 4 (dividir) \t Outro (Parar)");
+        Console.Write("\t\tSua Resposta: ");
+        int respostaDoUsuario = Convert.ToInt32(Console.ReadLine());
 
-    int x, y, z;
-    x = y = z = 50;
-    Console.WriteLine(x + y + z);
-    
-    int x = 5, y = 6, z = 50;
-    Console.WriteLine(x + y + z);
+        switch (respostaDoUsuario) {
+        case 1:
+            Console.Write("\t\tDigite um número para somar: ");
+            double soma = Convert.ToDouble(Console.ReadLine());
+            totalDaoperacao += soma;
+            break;
+        case 2:
+            Console.Write("\t\tDigite um número para subtrair: ");
+            double subtracao = Convert.ToDouble(Console.ReadLine());
+            totalDaoperacao -= subtracao;
+            break;
+        case 3:
+            Console.Write("\t\tDigite um número para multiplicar: ");
+            double multiplicacao = Convert.ToDouble(Console.ReadLine());
+            totalDaoperacao *= multiplicacao;
+            break;
+        case 4:
+            Console.Write("\t\tDigite um número para dividir: ");
+            double divisao = Convert.ToDouble(Console.ReadLine());
+            totalDaoperacao /= divisao;
+            break;
+        default:
+            Console.WriteLine(" ");
+            numero = 0;
+            break;
+        }
+    }
+    // No fim o sistema exibe o resultado na saída.
+    Console.WriteLine($"\t\tO total é {totalDaoperacao}");
+    Console.WriteLine("\t\tOBRIGADO POR USAR A CALCULADORA! :)");
+}
 
-    int myInt = 10;
-    double myDouble = 5.25;
-    bool myBool = true;
 
-    Console.WriteLine(Convert.ToString(myInt));    // convert int to string
-    Console.WriteLine(Convert.ToDouble(myInt));    // convert int to double
-    Console.WriteLine(Convert.ToInt32(myDouble));  // convert double to int
-    Console.WriteLine(Convert.ToString(myBool));   // convert bool to string
-    
-    OPERADORES DE COMPARAÇÃO
+// se a resposta do usuário for "N" (não)...
+else if (entradaDoUsuarioMaiuscula == "N") {
+    Console.WriteLine("\t\tTUDO BEM OBRIGADO POR TESTAR A CALCULADORA! :)");
+}
 
-    int x = 5;
-    int y = 3;
-Console.WriteLine(x > y);
-
-    */
-
-decimal horasLiquidas;
-horasLiquidas = 5.45m;
-string sobrenome = "Nathiellyson";
-
-Console.WriteLine("Hello, World!");
-Console.Write("Digite seu nome: ");
-string meuNome = Console.ReadLine();
-
-string nomeCompleto = $"{meuNome} {sobrenome}";
-
-Console.Write("Digite sua idade: ");
-int idade = Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine($"Olá, {nomeCompleto}!");
-Console.WriteLine($"Você tem {idade} anos.");
-Console.WriteLine($"e já o total de {horasLiquidas} horas liquidas de programação");
+// se ele digitar outra resposta...
+else {
+    Console.WriteLine("\t\tDIGITE UMA RESPOSTA VÁLIDA, PROGRAMA ENCERRADO.");
+}

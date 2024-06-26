@@ -1,7 +1,7 @@
     
 Curso Básico de c#:
 
-Aqui tem algumas informações importantes caso esqueça de algo.
+Aqui tem algumas informações importantes caso eu esqueça de algo.
 
     Início:
 
@@ -131,3 +131,83 @@ Aqui tem algumas informações importantes caso esqueça de algo.
     int time = 20;
     string result = (time < 18) ? "Good day." : "Good evening.";
     Console.WriteLine(result);
+
+    -------------------------------------------------------------
+
+    while (condition) 
+    {
+    // code block to be executed
+    }
+
+    Exemplo:
+
+    int i = 0;
+    while (i < 5) 
+    {
+    Console.WriteLine(i);
+    i++;
+    }
+
+    -------------------------------------------------------------
+
+    do while:
+
+    do 
+    {
+    // code block to be executed
+    }
+    while (condition);
+
+    Exemplo:
+
+    int i = 0;
+    do 
+    {
+        Console.WriteLine(i);
+        i++;
+    }
+    while (i < 5);
+
+    -------------------------------------------------------------
+
+    switch(expression) 
+    {
+    case x:
+        // code block
+        break;
+    case y:
+        // code block
+        break;
+    default:
+        // code block
+        break;
+    }
+
+    Exemplo: 
+
+    int day = 4;
+    switch (day) 
+    {
+    case 1:
+        Console.WriteLine("Monday");
+        break;
+    case 2:
+        Console.WriteLine("Tuesday");
+        break;
+    case 3:
+        Console.WriteLine("Wednesday");
+        break;
+    case 4:
+        Console.WriteLine("Thursday");
+        break;
+    case 5:
+        Console.WriteLine("Friday");
+        break;
+    case 6:
+        Console.WriteLine("Saturday");
+        break;
+    case 7:
+        Console.WriteLine("Sunday");
+        break;
+    }
+    // Outputs "Thursday" (day 4)
